@@ -1,0 +1,202 @@
+/*-- scss:defaults --*/
+// used to define variables that affect fonts, colors, borders, etc. (note that variables start with a $)
+
+//  built-in themes under https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/revealjs/themes
+
+//  what can be customized within a theme: https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Nunito&display=swap');
+
+$presentation-heading-font: 'Libre Franklin', sans-serif;
+
+// warmer grays (hue 240)
+$white:    #fff !default;
+$gray-100: #F8F8FA !default;
+$gray-200: #E9E9EF !default;
+$gray-300: #DCDCE6 !default;
+$gray-400: #CECEDA !default;
+$gray-500: #ADADBD !default;
+$gray-600: #868696 !default;
+$gray-700: #494957 !default;
+$gray-800: #343440 !default;
+$gray-900: #212129 !default;
+$black:    #000 !default;
+
+$blue-400: #4588ec !default;
+$blue-500: #2a6de0 !default;
+$blue-600: #0011bb !default;
+$blue-700: #020f9f !default;
+$blue-800: #010b76 !default;
+/*
+$blue-600: #1225d1 !default;
+$blue-700: #3d03c3 !default;
+$blue-800: #2b038a !default;
+$blue-900: #1d0061 !default;
+$indigo-blue:  #4a38ef !default;
+*/
+
+$blue:    #4582ec !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #d9534f !default;
+$orange:  #fd7e14 !default;
+$yellow:  #f0ad4e !default;
+$green:   #02b875 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+
+
+
+// from imag logo
+$highlight-pink:#f10087 !default;
+$highlight-yellow: #fff04c !default;
+$highlight-blue: #00b0ea !default;
+
+
+$light:         #fefefe !default;
+$dark:          $gray-900 !default;
+
+// $primary-color: #0011bb; !default;
+$primary-color:  $blue-600 !default;
+$second-color:  $blue-700 !default;
+$third-color:   $blue-800 !default;
+/*
+$primary-color: #02457a !default;
+$second-color:  #018abe;
+$third-color:   #97CADB;
+*/
+
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+
+
+// colour tweaks to theme
+$body-bg: $light;
+$body-color: $dark;
+
+$code-bg: darken($body-bg, 3%);
+$code-color: $highlight-pink;//$blue-800;
+
+$code-block-bg: darken($body-bg, 3%);
+$code-block-border-color: $body-bg;
+
+$link-color: $blue-600;//$indigo-blue;
+
+$border-color: lighten($link-color, 25%);
+
+
+
+
+
+// font sizes;
+$font-size-base:   1rem !default; // Assumes the browser default, typically `16px`
+$h1-font-size:     $font-size-base * 2.5 !default;
+$h2-font-size:     $font-size-base * 2 !default;
+$h3-font-size:     $font-size-base * 1.75 !default;
+$h4-font-size:     $font-size-base * 1.5 !default;
+$h5-font-size:     $font-size-base * 1.25 !default;
+$h6-font-size:     $font-size-base !default;
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: 300;
+}
+
+$code-font-size: $font-size-base;
+
+code {
+    font-feature-settings: 'dlig' 0, 'liga' 0, 'calt' 1, 'zero' 1, 'ss02' 0;
+}
+
+code span.co {
+  font-family: "MonoLisa-RegularItalic", "Fira Mono", monospace;
+}
+
+h1 code {
+  font-size: $h1-font-size;
+}
+
+h2 code {
+  font-size: $h2-font-size;
+}
+
+h3 code {
+  font-size: $h3-font-size;
+}
+
+h4 code {
+  font-size: $h4-font-size;
+}
+
+h5 code {
+  font-size: $h5-font-size;
+}
+
+h6 code {
+  font-size: $h6-font-size;
+}
+
+// callouts
+$callout-color-note: $highlight-blue;
+$callout-color-tip: $green;
+$callout-color-caution: $orange;
+$callout-color-warning: $highlight-yellow;
+$callout-color-important: $highlight-pink;
+
+
+
+
+
+
+/*-- scss:rules --*/
+// used to create CSS rules. Note that CSS rules that target Reveal content generally need to use the .reveal .slide prefix to successfully override the theme’s default styles.
+
+// custom title slide
+#title-slide {
+  .title {
+    font-size: 4.5em;
+    color: $primary-color;
+  }
+
+  .subtitle {
+    font-size: 3em;
+    color: $second-color;
+  }
+
+  .quarto-title-author {
+    color: $third-color;
+  }
+}
+
+
+// color classes
+.primary {
+    color: $primary-color;
+}
+
+.second-color {
+  color: $second-color;
+}
+
+.third-color {
+  color: $third-color;
+}
+
+// customize slide logo
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  bottom: unset !important;
+  right: unset !important;
+  top: 5px;
+  left: 12px;
+  height: 25px !important;
+  // width: 30px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
