@@ -1,10 +1,12 @@
 project:
     type: website
 
-title: "Presentation"
-subtitle: "A template"
+website:
+    favicon: images/triangle_favicon.png
+title: "Enhancing forest disturbance monitoring with ALS data integration"
+#subtitle: ""
 author: "Jens Wiesehahn"
-# institute: 
+institute: "Northwest German Forest Research Institute" 
 
 format: # format options: https://quarto.org/docs/reference/formats/presentations/revealjs.html
     revealjs:
@@ -25,6 +27,7 @@ format: # format options: https://quarto.org/docs/reference/formats/presentation
         navigation-mode: vertical
         tbl-cap-location: bottom
         mainfont: Nunito
+        monofont: Roboto Mono
         code-line-numbers: false
         code-fold: true
         code-summary: "Show the code"
@@ -47,3 +50,5 @@ filters:
     - lightbox
 
 bibliography: references.bib
+
+include-after-body: assets/logo-hyperlink.html

@@ -6,7 +6,7 @@
 //  what can be customized within a theme: https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables
 
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Nunito&family=Roboto+Mono&display=swap');
 
 $presentation-heading-font: 'Libre Franklin', sans-serif;
 
@@ -60,9 +60,9 @@ $light:         #fefefe !default;
 $dark:          $gray-900 !default;
 
 // $primary-color: #0011bb; !default;
-$primary-color:  $blue-600 !default;
+$primary-color:  $blue-800 !default;
 $second-color:  $blue-700 !default;
-$third-color:   $blue-800 !default;
+$third-color:   $blue-600 !default;
 /*
 $primary-color: #02457a !default;
 $second-color:  #018abe;
@@ -114,7 +114,7 @@ code {
 }
 
 code span.co {
-  font-family: "MonoLisa-RegularItalic", "Fira Mono", monospace;
+  font-family: "Roboto+Mono", monospace;
 }
 
 h1 code {
@@ -159,12 +159,10 @@ $callout-color-important: $highlight-pink;
 // custom title slide
 #title-slide {
   .title {
-    font-size: 4.5em;
     color: $primary-color;
   }
-
+  
   .subtitle {
-    font-size: 3em;
     color: $second-color;
   }
 
@@ -175,17 +173,22 @@ $callout-color-important: $highlight-pink;
 
 
 // color classes
-.primary {
+.primary-color {
     color: $primary-color;
 }
-
 .second-color {
   color: $second-color;
 }
-
 .third-color {
   color: $third-color;
 }
+.light-color {
+  color: $light;
+}
+.dark-color {
+  color: $dark;
+}
+
 
 // customize slide logo
 .reveal .slide-logo {
@@ -199,4 +202,19 @@ $callout-color-important: $highlight-pink;
   // width: 30px !important;
   max-width: unset !important;
   max-height: unset !important;
+}
+
+// links
+.reveal a {
+  color: $body-color;
+  text-decoration: underline;
+  text-decoration-color: lighten($body-color, 50%);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .1rem;
+  text-underline-position: under;
+}
+
+.reveal a:hover {
+  color: $third-color;
+  text-decoration-color:$highlight-blue;
 }
