@@ -1,51 +1,11 @@
 
-# Presentation Template
+# Enhancing forest disturbance monitoring with ALS data integration
 
-This template repository is meant as personal starting point to create [RevealJS](https://revealjs.com/) presentations from Markdown via [Quarto](https://quarto.org/). It should provide a skeleton for a quick entry, using a concise style between presentations and automatic rendering via Github workflows. 
+## Abstract: 
 
-### Get startet
+**Keywords:** *forest disturbance*, *ALS*, *data integration*, *monitoring*, *forest management*
 
-If everything works well the only thing you have to do is add content to the `presentation.qmd` file.
+Forest disturbances in Germany show an unprecedented frequency and extent in recent years. Observed disturbances are mainly a result of drought conditions and windthrow events, which in turn have also fostered a dramatic increase in bark beetle infestations. As a result, there is a growing need to map, analyse and assess forest disturbances. A multitude of projects is currently developing systems to monitor forest disturbances in Germany. Most of these systems use frequently available optical satellite imagery (e.g. Sentinel-2) and change detection analysis to identify forest disturbances. They aim at providing timely information about where forest was disturbed. To further enhance these systems, the integration of airborne laser scanning (ALS) data could be beneficial to gain further insights, as ALS complements satellite imagery by providing high-resolution and three-dimensional information on affected forest stands.
 
-Informtion about Quarto Markdown syntax and options for RevealJS presentations can be found at https://quarto.org/docs/presentations/revealjs/.
-
-#### References
-
-References can be manually inserted in the `references.bib` file and cited via their key (e.g. `[@Wiesehahn_2023]`. 
-
-Alternatively references can be managed within Zotero and synchronized with the `references.bib`,  plugins such as the *Citation Picker for Zotero* in VS Code help to insert citations (e.g. via `alt`+`shift`+`z`).
-
-https://quarto.org/docs/authoring/footnotes-and-citations.html
-
-
-### Pre-installed extensions
-
-#### [Quarto social embeds](https://github.com/sellorm/quarto-social-embeds)
-
-Use to embed GitHub gists, Twitter, Youtube, Vimeo, Mastodon, e.g.:
-`{{< gist wiesehahn 6b6c215c227341f4faab03ff96fa7f1b >}}`
-
-#### [Attribution](https://github.com/quarto-ext/attribution)
-
-Use to display attribution text sideways, e.g.:
-```r
-::: {.attribution}
-by [@Jens Wiesehahn](https://wiesehahn.github.io/)
-:::
-```
-
-#### [Lightbox](https://github.com/quarto-ext/lightbox)
-
-Use to add lightbox styling and behavior to images in HTML documents, e.g.:
-
-`![logo](images/triangle_logo.png){.lightbox}`
-
-#### [Verticator](https://github.com/Martinomagnifico/quarto-verticator)
-
-Adds indicators to show the amount of slides in a vertical stack.
-
-#### [Qrcode Extension for Quarto](https://github.com/jmbuhr/quarto-qrcode)
-
-Provides shortcodes for qrcodejs in quarto, e.g.:
-
-`{{< qrcode https://github.com/jmbuhr/quarto-qrcode >}}`
+We present basic insights into forest disturbances and corresponding monitoring efforts and provide an overview on the status of ALS data availability in Germany. We investigate the potential of various ALS-based use cases to gather additional information for forest disturbance patches detected by satellite imagery. Post-disturbance ALS data could provide detailed information regarding the disturbed forest sites, such as remaining trees or coarse-woody debris. More relevant for appropriate decision-making would be applications based on ALS data collected prior to the disturbances, as it is often readily available. This data could be used to provide information about the affected growing stock, existing skid trails or geomorphology linked to reforestation efforts.
+The integration of ALS data in existing forest monitoring systems could support informed decision-making for a sustainable management of disturbed forest stands. Additionally, it could be applied to analyse disturbance patterns retrospectively.

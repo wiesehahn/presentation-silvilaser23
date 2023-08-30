@@ -186,8 +186,19 @@ $callout-color-important: $highlight-pink;
   color: $light;
 }
 .dark-color {
-  color: $dark;
+color: $dark;
 }
+.highlight-color-pink {
+  color: $highlight-pink;
+}
+.highlight-color-yellow {
+  color: $highlight-yellow;
+}
+.highlight-color-blue {
+  color: $highlight-blue;
+}
+
+
 
 
 // customize slide logo
@@ -218,3 +229,4 @@ $callout-color-important: $highlight-pink;
   color: $third-color;
   text-decoration-color:$highlight-blue;
 }
+

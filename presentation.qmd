@@ -1,432 +1,546 @@
 
+# Background
 
-# Slide 1.1
-
-![Alternative image text](images/triangle_logo.png){.lightbox}
-
-## Slide 1.2
-
-
-# Quarto syntax examples
-
-## Attribution
-
-With the [Attribution extension](https://github.com/quarto-ext/attribution) we can display attributions on the right side.
-
-```markdown
-::: {.attribution}
-by [Jens Wiesehahn](https://wiesehahn.github.io/)
-:::
-```
-
-::: {.attribution}
-by [Jens Wiesehahn](https://wiesehahn.github.io/)
+::: {.notes}
+forests are facing a number of challenges
+- increased demands on forest
+    - recreation
+    - biodiversity
+    - timber
+- reduced staff (more area per forester) 
 :::
 
+## Climate Change
 
-## Reference & Footer
+::: {.r-stack}
+![](images/mean-temperature_goettingen_2018.png)
 
-``` markdown                            
-Lets insert a reference at the end of a sentence [@Wiesehahn_2023]. 
-```
-Lets insert a reference at the end of a sentence [@Wiesehahn_2023]. 
-
-
-``` markdown                            
-@Wiesehahn_2023 inserts an inline reference.
-```
-@Wiesehahn_2023 inserts an inline reference.
-
-
-
-The reference list is added at the end of the document, or can be added via 
-```markdown
-::: {#refs}
+![](images/average-precipitation_goettingen_2018.png){.fragment}
 :::
 
-```
-
-To insert a footer use:
-
-
-``` markdown                            
-::: footer
-Custom footer text
-:::
-```
-::: footer
-Custom footer text
+::: {.notes}
+- 2018 and following years showed severe droughts in Central Europe
+- extreme events will increase
 :::
 
 
+## Disturbances
 
-## Text Formatting
+Forests suffered severe drought stress in recent years
 
-+-----------------------------------------+-----------------------------------------+
-| Markdown Syntax                         | Output                                  |
-+=========================================+=========================================+
-| ``` markdown                            | *italics*, **bold**, ***bold italics*** |
-| *italics*, **bold**, ***bold italics*** |                                         |
-| ```                                     |                                         |
-+-----------------------------------------+-----------------------------------------+
-| ``` markdown                            | superscript^2^ / subscript~2~           |
-| superscript^2^ / subscript~2~           |                                         |
-| ```                                     |                                         |
-+-----------------------------------------+-----------------------------------------+
-| ``` markdown                            | ~~strikethrough~~                       |
-| ~~strikethrough~~                       |                                         |
-| ```                                     |                                         |
-+-----------------------------------------+-----------------------------------------+
-| ``` markdown                            | `verbatim code`                         |
-| `verbatim code`                         |                                         |
-| ```                                     |                                         |
-+-----------------------------------------+-----------------------------------------+
+This amplified massive bark beetle outbreaks
 
-## Headings
+German forests hit particularly heavy in recent years
 
-+-----------------+-----------------------------------+
-| Markdown Syntax | Output                            |
-+=================+===================================+
-| ``` markdown    | # Header 1 {.heading-output}      |
-| # Header 1      |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | ## Header 2 {.heading-output}     |
-| ## Header 2     |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | ### Header 3 {.heading-output}    |
-| ### Header 3    |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | #### Header 4 {.heading-output}   |
-| #### Header 4   |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | ##### Header 5 {.heading-output}  |
-| ##### Header 5  |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | ###### Header 6 {.heading-output} |
-| ###### Header 6 |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
+- more than 500.000 ha (5 %) forest loss (2018-2020) (@thonfeldFirstAssessmentCanopy2022)
+- 255 mio. m³ affected timber (2018-2022) ([BMEL](https://www.bmel.de/DE/themen/wald/wald-in-deutschland/wald-trockenheit-klimawandel.html))
 
+## Harz 2017 {background-color="white" background-image=images/harz_3dview_ortho2017.jpeg}
 
-## Links & Images
-
-``` markdown                                                                                                                                     
-<https://quarto.org>                                                                                                                                                 
-```
-<https://quarto.org>
-
-
-``` markdown
-[Quarto](https://quarto.org)
-```
-[Quarto](https://quarto.org)           
-
-
-``` markdown
-![Caption](/images/triangle_logo.png)
-```
-![Caption](/images/triangle_logo.png){fig-alt="Logo image"}  
-
-
-``` markdown                                                                             
-[![Caption](/images/triangle_logo.png)](https://quarto.org)
-```
-[![Caption](/images/triangle_logo.png)](https://quarto.org)    
-
-
-``` markdown                                                  
-[![Caption](/images/triangle_logo.png)](https://quarto.org " Logo image")
-```
-[![Caption](/images/triangle_logo.png " Logo image"){fig-alt="Logo image."}](https://quarto.org) 
-
-
-``` markdown                                                             
-[![](/images/triangle_logo.png){fig-alt="Alt text"}](https://quarto.org)
-```
-[![](/images/triangle_logo.png){fig-alt="Logo image."}](https://quarto.org)          
-
-
-## Lists {.scrollable}
-
-+-----------------------------------+---------------------------------+
-| Markdown Syntax                   | Output                          |
-+===================================+=================================+
-| ``` markdown                      |                                 |
-| * unordered list                  | * unordered list                |
-|     + sub-item 1                  |     + sub-item 1                |
-|     + sub-item 2                  |     + sub-item 2                |
-|         - sub-sub-item 1          |         - sub-sub-item 1        |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| *   item 2                        | -   item 2                      |
-|                                   |                                 |
-|     Continued (indent 4 spaces)   |     Continued (indent 4 spaces) |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| 1. ordered list                   |  1. ordered list                |
-| 2. item 2                         |  2. item 2                      |
-|     i) sub-item 1                 |      i) sub-item 1              |
-|          A.  sub-sub-item 1       |           A.  sub-sub-item 1    |
-| ```                               |                                 |
-|                                   |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| (@)  A list whose numbering       |  (1) A list whose numbering     |
-|                                   |                                 |
-| continues after                   |  continues after                |
-|                                   |                                 |
-| (@)  an interruption              |  (2) an interruption            |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| ::: {}                            | ::: {}                          |
-| 1. A list                         | 1. A list                       |
-| :::                               | :::                             |
-|                                   |                                 |
-| ::: {}                            | ::: {}                          |
-| 1. Followed by another list       | 1. Followed by another list     |
-| :::                               | :::                             |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| term                              | term                            |
-| : definition                      | : definition                    |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-
-Note that unlike other Markdown renderers (notably Jupyter and GitHub), lists in Quarto require an entire blank line above the list. Otherwise the list will not be rendered in list form, rather it will all appear as normal text along a single line.
-
-
-
-## Tables
-
-#### Markdown Syntax
-
-``` markdown
-| Right | Left | Default | Center |
-|------:|:-----|---------|:------:|
-|   12  |  12  |    12   |    12  |
-|  123  |  123 |   123   |   123  |
-|    1  |    1 |     1   |     1  |
-```
-
-#### Output
-
-| Right | Left | Default | Center |
-|------:|:-----|---------|:------:|
-|    12 | 12   | 12      |   12   |
-|   123 | 123  | 123     |  123   |
-|     1 | 1    | 1       |   1    |
-
-
-
-## Source Code {.scrollable}
-
-Use ```` ``` ```` to delimit blocks of source code:
-
-Add a language to syntax highlight code blocks:
-
-```` markdown
-```python
-1 + 1
-```
-````
-
-Pandoc supports syntax highlighting for over [140 different languages](https://github.com/jgm/skylighting/tree/master/skylighting-core/xml). If your language is not supported then you can use the `default` language to get a similar visual treatment:
-
-```` markdown
-```default
-code
-```
-````
-
-
-Naming code blocks like
-
-````markdown
-```{.r filename="script.r"}
-1+1
-```
-````
-gives
-
-````{.r filename="script.r"}
-1+1
-````
-
-
-Highlight certain lines with e.g. `{.python code-line-numbers="6-8"}`
-
-```{.python code-line-numbers="6-8"}
-import numpy as np
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
-
-
-You can collapse code with 
-```markdown 
-#| code-fold: true
-#| code-summary: "Code"
-```
-
-````{.r}
-#| code-fold: true
-#| code-summary: "Code"
-
-1+1
-````  
-
-
-
-## Equations
-
-Use `$` delimiters for inline math and `$$` delimiters for display math. For example:
-
-+---------------------------+-------------------------+
-| Markdown Syntax           | Output                  |
-+===========================+=========================+
-| ``` markdown              |                         |
-| inline math: $E = mc^{2}$ | inline math: $E=mc^{2}$ |
-| ```                       |                         |
-+---------------------------+-------------------------+
-| ``` markdown              |                         |
-| display math:             | display math:           |
-|                           |                         |
-| $$E = mc^{2}$$            | $$E = mc^{2}$$          |
-| ```                       |                         |
-+---------------------------+-------------------------+
-
-
-## Diagrams
-
-Quarto has native support for embedding [Mermaid](https://mermaid-js.github.io/mermaid/#/) and [Graphviz](https://graphviz.org/) diagrams. This enables you to create flowcharts, sequence diagrams, state diagrams, Gantt charts, and more using a plain text syntax inspired by markdown.
-
-For example, here we embed a flowchart created using Mermaid:
-
-```{mermaid}
-%%| echo: fenced
-flowchart LR
-    A[Hard edge] --> B(Round edge)
-    B --> C{Decision}
-    C --> D[Result one]
-    C --> E[Result two]
-```
-
-
-## Videos
-
-You can include videos in documents using the `{{{< video >}}}` shortcode. For example, here we embed a YouTube video:
-
-``` {.markdown shortcodes="false"}
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
-```
-
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
-
-
-
-## Divs and Spans
-
-You can add classes, attributes, and other identifiers to regions of content using Divs and Spans (you'll see an example of this below in [Callout Blocks]).
-
-For example, here we add the "border" class to a region of content using a div (`:::`):
-
-``` markdown
-::: {.second-color}
-This content can be styled with a border
+::: {.notes}
+2017: Forestry world still fine 
+2018+: droughts + barkbeetle 
 :::
-```
 
-::: {.second-color}
-This content can be styled with a border
+## Harz 2022 {background-color="white" background-image=images/harz_3dview_ortho2022.jpeg}  
+
+::: {.light-color}
+- lead to large-scale forest disturbances in recent years
+- caused a need for information
+:::
+
+# [Forest Disturbances]{.light-color} {background-color="white" background-image=images/brocken_disturbances_mapbox.jpg}
+
+# Forest Disturbance Monitoring
+
+## Disturbance Monitoring Systems
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**terrestrial (sample-based)**
+
+*e.g. [National Forest Inventory](https://www.bundeswaldinventur.de/en/), [Forest Condition Survey](https://www.thuenen.de/en/fachinstitute/waldoekosysteme/projekte/bodenschutz-und-waldzustand/projekte-waldzustandserhebung/national-forest-condition-survey)*
+
+{{< iconify typcn plus size=sm >}} established systems  
+{{< iconify typcn plus size=sm >}} detailed data (many attributes)  
+{{< iconify typcn minus size=sm >}} no information on local level  
+{{< iconify typcn minus size=sm >}} low repition rates  
+{{< iconify typcn minus size=sm >}} costly
+
+
+{{< iconify ep arrow-right-bold size=sm >}} robust statistics on national level
+:::
+
+::: {.column width="50%"}
+**remote (satellite-based)**
+
+*e.g. [Waldmonitor DE](https://map3d.remote-sensing-solutions.de/waldmonitor-deutschland/), [Forestwatch-DE](https://forestwatch.lup-umwelt.de/app/), [FNEWS](https://www.fnews-wald.de/)*
+
+<br>
+
+{{< iconify typcn minus size=sm >}} sparse additional information  
+{{< iconify typcn plus size=sm >}} wall-to-wall maps  
+{{< iconify typcn plus size=sm >}} high repition rates  
+{{< iconify typcn plus size=sm >}} low-cost
+
+{{< iconify ep arrow-right-bold size=sm >}} disturbance maps on national level
+:::
+
+::::
+
+
+. . . 
+
+
+:::: {.columns}
+
+:::{.column width="25%"}
+:::
+
+::: {.column width="50%"}
+**remote (ALS)**
+
+*barely used in (German) forestry until now*
+
+{{< iconify typcn media-record size=xs >}} detailed data  
+{{< iconify typcn media-record size=xs >}} low to medium repition rates  
+{{< iconify typcn media-record size=xs >}} costly ($)  
+{{< iconify typcn media-record size=xs >}} wall-to-wall maps  
+{{< iconify typcn media-record size=xs >}} on medium to large scale
+
+{{< iconify ep arrow-right-bold size=sm >}} enhancing existing systems
+:::
+
+:::{.column width="25%"}
+:::
+
+::::
+
+
+## Mapped Disturbances {background-color="white" background-image=images/harz_3dview_ortho2022_disturbances.jpeg}  
+
+<br>
+
+::: {.light-color}
+accelerated forest disturbance mapping
 :::
 
 
-``` markdown
-[This is *some text*]{.third-color}
-```
+# Current Lidar Applications
 
-[This is *some text*]{.third-color}
+## Mapped Disturbances {background-color="white" background-image=images/harz_3dview_ortho2022_disturbances.jpeg}  
 
+<br>
 
-## Callout Blocks
-
-#### Markdown Syntax
-
-``` markdown
-:::{.callout-note}
-Note that there are five types of callouts, including: 
-`note`, `tip`, `warning`, `caution`, and `important`.
-:::
-```
-
-#### Output
-
-::: callout-note
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
+::: {.light-color}
+barely any
 :::
 
-::: callout-tip
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
+## Height Models {background-color="white" background-image=images/harz_3dview_cmh2018.jpeg}  
+
+<br>
+
+::: {.light-color}
+Terrain / Canopy Height Model
 :::
 
-::: callout-warning
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
+## Height Models {background-color="white" background-image=images/harz_3dview_cmh2018_disturbances.jpeg}  
+
+<br>
+
+::: {.light-color}
+Terrain / Canopy Height Model
 :::
 
-::: callout-caution
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
+## Height Models {background-color="white" background-image=images/sample_disturbance.png}  
+
+112.2 ha
+
+## ITD {background-color="white" background-image=images/sample_disturbance_ttops.png}  
+
+- 29833 trees
+- 266 trees/ha
+- 26.64 m avg. height 
+
+
+# ALS Data Availability
+
+##
+
+getting better
+
+# Lidar Integration
+
+##
+
+::: {.r-stack}
+![](images/spruce_stand_above.png)
+
+![](images/spruce_stand_deadwood.png){.fragment}
 :::
 
-::: callout-important
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
+##
+
+::: {.r-stack}
+![](images/beech_stand_above.png)
+
+![](images/beech_stand_deadwood.png){.fragment}
+:::
+
+##
+
+::: {.r-stack}
+![](images/disturbance_rayshader_2016.png)
+
+![](images/disturbance_rayshader_2020.png){.fragment}
 :::
 
 
-## Other Blocks
+##
 
-+--------------------------+--------------------------+
-| Markdown Syntax          | Output                   |
-+==========================+==========================+
-| ``` markdown             | > Blockquote             |
-| > Blockquote             |                          |
-| ```                      |                          |
-+--------------------------+--------------------------+
-| ``` markdown             | ::: classname            |
-| ::: {.classname}         | Div                      |
-| Div                      | :::                      |
-| :::                      |                          |
-| ```                      |                          |
-+--------------------------+--------------------------+
-| ``` markdown             | | Line Block             |
-| | Line Block             | |    Spaces and newlines |
-| |   Spaces and newlines  | |    are preserved       |
-| |   are preserved        |                          |
-| ```                      |                          |
-+--------------------------+--------------------------+
+disturbance mapping might be possible but continuous monitoring needs frequent data
 
-# Final Slide
+Enhancement instead of substitution of current systems
+
+
+# Post-Disturbance Data
+
+## 
+
+:::: {.columns}
+::: {.column width="70%"}
+
+::: {.r-stack}
+![](images/post-disturbance_2020_chm.jpeg)
+
+![](images/post-disturbance_2020_chm_disturbance.jpeg){.fragment}
+:::
+
+
+:::
+
+::: {.column width="30%"}
+- simple height threshold to search for non-forested areas
+:::
+::::
+
+
+## 
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/post-disturbance_2020_sample.jpeg)
+:::
+
+::: {.column width="30%"}
+- disturbance validation
+
+Processed?
+
+- No
+    - (log detection)
+    - existing regrowth
+    - potential seeding trees
+    - skid trails (reuse?)
+- Yes
+    - skid trails (FSC-conform?)
+    - wood piles
+
+:::
+::::
+
+
+## Deadwood detection {transition="fade"}
+
+![](images/spruce_stand_above.png)
+
+
+## Deadwood detection {transition="fade"}
+
+![](images/spruce_stand_deadwood.png)
+
+
+## Small scale disturbances {transition="fade"}
+
+![](images/beech_stand_above.png)
+
+
+## Small scale disturbances {transition="fade"}
+
+![](images/beech_stand_deadwood.png)
+
+
+##
+
+site index
+    solar energy (remaining vegetation)
+remaining trees (regrowth management)
+deadwood
+forest thinning
+
+## Forest Management
+
+Potential Regeneration (Second layer trees)
+
+## Wood Volume
+
+## Disturbance Severity
+
+- remaining trees
+- differentiate thinning (also with photos)
+- 
+
+
+
+# Pre-Disturbance Data
+
+## Aerial Imagery {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_ortho.jpeg)
+:::
+
+::: {.column width="30%"}
+- readily available
+- easy visual interpretation 
+:::
+::::
+
+
+##  Canopy height {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_chm.jpeg)
+:::
+
+::: {.column width="30%"}
+- basic stand characteristics  
+:::
+::::
+
+
+## Individual trees {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_ttops.jpeg)
+:::
+
+::: {.column width="30%"}
+- tree characteristics
+:::
+::::
+
+
+## Stand density {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_ttops_stand-density.jpeg)
+:::
+
+::: {.column width="30%"}
+
+:::
+::::
+
+
+## Intensity {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_imean-upper.jpeg)
+:::
+
+::: {.column width="30%"}
+Can be used to delineate species groups under certain conditions
+:::
+::::
+
+
+## Species group {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_ttops_species.jpeg)
+:::
+
+::: {.column width="30%"}
+stand structure
+:::
+::::
+
+
+## Canopy gaps {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_gaps_dbh-to-top.jpeg)
+:::
+
+::: {.column width="30%"}
+unstocked forest areas prior to disturbance
+:::
+::::
+
+
+## Understory vegetation {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_gaps_dbh-to-5m.jpeg)
+:::
+
+::: {.column width="30%"}
+- stand structure
+- potential regrowth
+- prioritize afforestation
+:::
+::::
+
+
+## Understory vegetation {transition="fade"} 
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_imean-lower.jpeg)
+:::
+
+::: {.column width="30%"}
+stand structure
+:::
+::::
+
+
+## Terrain {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_dtm_time-in-daylight.jpeg)
+:::
+
+::: {.column width="30%"}
+- forest site conditions
+- infrastructure
+- trafficability
+- ...
+:::
+::::
+
+::: {.notes}
+plan harvesting operations
+    - existing skid tracks
+:::
+
+## Site index (solar energy) {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_dtm_time-in-daylight2.jpeg)
+:::
+
+::: {.column width="30%"}
+- possible cause for disturbance?
+- information for afforestation planning
+:::
+::::
+
+
+## Site index (hydrology) {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_flow-accumulation.jpeg)
+:::
+
+::: {.column width="30%"}
+- possible cause for disturbance?
+- information for afforestation planning
+:::
+::::
+
+
+## Example {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_sample_chm.jpeg)
+:::
+
+::: {.column width="30%"}
+- 4.4 ha
+- disturbance between 2018 and 2021
+- windthrow / bark beetle
+
+
+![](images/rheinhausen_sample_ortho_overview.jpeg)
+:::
+::::
+
+
+## Example - Volume {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_sample_volume.jpeg)
+:::
+
+::: {.column width="30%"}
+- 853 trees  
+    - 104 deciduous
+    - 749 evergreen
+- 196 trees/ha
+- 27.28 m avg. height
+- 0.9 m³ avg. volume
+- 851 m³ volume
+:::
+::::
+
+
+## Example - Trafficability {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_sample_terrain_track.jpeg)
+:::
+
+::: {.column width="30%"}
+- 254 m forest road (58 m/ha)
+- 768 m skid roads (176 m/ha)
+- obstacles
+:::
+::::
+
+##  Example - Site index {transition="fade"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_sample_stand-index.jpeg)
+:::
+
+::: {.column width="30%"}
+- wetness
+- solar exposure
+:::
+::::
+
+
+
+
+
+# Conclusion
+
+Retrospective disturbance analysis
+
 
 
 Slides available under  
 [{{< var website >}}]({{< var website >}})
 
-{{< qrcode https://wiesehahn.github.io/quarto_presentation_template width=500 height=500 colorDark='#0011bb' >}}
+{{< qrcode https://wiesehahn.github.io/presentation-silvilaser23 width=500 height=500 colorDark='#0011bb' >}}
 
 
 
