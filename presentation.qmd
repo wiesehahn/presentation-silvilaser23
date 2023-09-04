@@ -1,3 +1,11 @@
+---
+title: "Enhancing forest disturbance monitoring with ALS data integration"
+#subtitle: ""
+author: "Jens Wiesehahn"
+institute: "Northwest German Forest Research Institute" 
+title-slide-attributes:
+    data-background-image: images/presentation_title_image.png
+---
 
 # Background
 
@@ -10,13 +18,21 @@ forests are facing a number of challenges
 - reduced staff (more area per forester) 
 :::
 
-## Climate Change
 
-::: {.r-stack}
+## Climate Change {auto-animate=true}
+
+:::: {.r-stack}
+::: {.fragment .fade-out  fragment-index=1}
 ![](images/mean-temperature_goettingen_2018.png)
-
-![](images/average-precipitation_goettingen_2018.png){.fragment}
 :::
+
+::: {.fragment .fade-in  fragment-index=1}
+![](images/average-precipitation_goettingen_2018.png)
+
+- severe drought stress
+:::
+::::
+
 
 ::: {.notes}
 - 2018 and following years showed severe droughts in Central Europe
@@ -24,39 +40,87 @@ forests are facing a number of challenges
 :::
 
 
-## Disturbances
+## Forest Disturbances {background-color="white" background-image=images/harz_3dview_ortho2017.jpeg auto-animate=true}
 
-Forests suffered severe drought stress in recent years
+<br>
 
-This amplified massive bark beetle outbreaks
+<br>
 
-German forests hit particularly heavy in recent years
-
-- more than 500.000 ha (5 %) forest loss (2018-2020) (@thonfeldFirstAssessmentCanopy2022)
-- 255 mio. m³ affected timber (2018-2022) ([BMEL](https://www.bmel.de/DE/themen/wald/wald-in-deutschland/wald-trockenheit-klimawandel.html))
-
-## Harz 2017 {background-color="white" background-image=images/harz_3dview_ortho2017.jpeg}
-
-::: {.notes}
-2017: Forestry world still fine 
-2018+: droughts + barkbeetle 
-:::
-
-## Harz 2022 {background-color="white" background-image=images/harz_3dview_ortho2022.jpeg}  
+<br>
 
 ::: {.light-color}
+- severe drought stress
+
+{{< iconify ep arrow-right-bold size=sm >}} amplified massive bark beetle outbreaks in Germany
+:::
+
+
+::: {.notes}
+Forests suffered severe drought stress in recent years
+German forests hit particularly heavy
+
+- 2017: Forestry world still fine 
+- 2018+: droughts + barkbeetle 
+:::
+
+
+## Forest Disturbances {background-color="white" background-image=images/harz_3dview_ortho2022.jpeg transition="fade" auto-animate=true}
+
+<br>
+
+<br>
+
+<br>
+
+::: {.light-color}
+- severe drought stress
+
+{{< iconify ep arrow-right-bold size=sm >}} amplified massive bark beetle outbreaks in Germany
+:::
+
+
+::: {.notes}
 - lead to large-scale forest disturbances in recent years
 - caused a need for information
 :::
 
-# [Forest Disturbances]{.light-color} {background-color="white" background-image=images/brocken_disturbances_mapbox.jpg}
 
-# Forest Disturbance Monitoring
+## Disturbance Monitoring {background-color="white" background-image=images/harz_3dview_ortho2022_disturbances.jpeg auto-animate=true}  
 
-## Disturbance Monitoring Systems
+<br>
+
+<br>
+
+<br>
+
+::: {.light-color}
+- severe drought stress
+
+{{< iconify ep arrow-right-bold size=sm >}} amplified massive bark beetle outbreaks in Germany
+
+{{< iconify ep arrow-right-bold size=sm >}} caused a need for information
+:::
+
+<br>
+
+. . .
+
+::: {.light-color}
+- more than 500.000 ha (5 %) forest loss (2018-2020) (@thonfeldFirstAssessmentCanopy2022)
+- 255 mio. m³ affected timber (2018-2022) ([BMEL](https://www.bmel.de/DE/themen/wald/wald-in-deutschland/wald-trockenheit-klimawandel.html))
+:::
+
+
+::: {.notes}
+accelerated forest disturbance mapping
+:::
+
+
+## Disturbance Monitoring
+
+<br>
 
 :::: {.columns}
-
 ::: {.column width="50%"}
 **terrestrial (sample-based)**
 
@@ -86,20 +150,19 @@ German forests hit particularly heavy in recent years
 
 {{< iconify ep arrow-right-bold size=sm >}} disturbance maps on national level
 :::
-
 ::::
 
 
 . . . 
 
+<br>
 
 :::: {.columns}
-
 :::{.column width="25%"}
 :::
 
 ::: {.column width="50%"}
-**remote (ALS)**
+**Airborne Laser Scanning**
 
 *barely used in (German) forestry until now*
 
@@ -114,202 +177,20 @@ German forests hit particularly heavy in recent years
 
 :::{.column width="25%"}
 :::
-
 ::::
 
 
-## Mapped Disturbances {background-color="white" background-image=images/harz_3dview_ortho2022_disturbances.jpeg}  
-
-<br>
-
-::: {.light-color}
-accelerated forest disturbance mapping
-:::
-
-
-# Current Lidar Applications
-
-## Mapped Disturbances {background-color="white" background-image=images/harz_3dview_ortho2022_disturbances.jpeg}  
-
-<br>
-
-::: {.light-color}
-barely any
-:::
-
-## Height Models {background-color="white" background-image=images/harz_3dview_cmh2018.jpeg}  
-
-<br>
-
-::: {.light-color}
-Terrain / Canopy Height Model
-:::
-
-## Height Models {background-color="white" background-image=images/harz_3dview_cmh2018_disturbances.jpeg}  
-
-<br>
-
-::: {.light-color}
-Terrain / Canopy Height Model
-:::
-
-## Height Models {background-color="white" background-image=images/sample_disturbance.png}  
-
-112.2 ha
-
-## ITD {background-color="white" background-image=images/sample_disturbance_ttops.png}  
-
-- 29833 trees
-- 266 trees/ha
-- 26.64 m avg. height 
-
-
-# ALS Data Availability
-
-##
-
-getting better
-
-# Lidar Integration
-
-##
-
-::: {.r-stack}
-![](images/spruce_stand_above.png)
-
-![](images/spruce_stand_deadwood.png){.fragment}
-:::
-
-##
-
-::: {.r-stack}
-![](images/beech_stand_above.png)
-
-![](images/beech_stand_deadwood.png){.fragment}
-:::
-
-##
-
-::: {.r-stack}
-![](images/disturbance_rayshader_2016.png)
-
-![](images/disturbance_rayshader_2020.png){.fragment}
-:::
-
-
-##
-
-disturbance mapping might be possible but continuous monitoring needs frequent data
-
-Enhancement instead of substitution of current systems
-
-
-# Post-Disturbance Data
-
-## 
-
-:::: {.columns}
-::: {.column width="70%"}
-
-::: {.r-stack}
-![](images/post-disturbance_2020_chm.jpeg)
-
-![](images/post-disturbance_2020_chm_disturbance.jpeg){.fragment}
-:::
-
-
-:::
-
-::: {.column width="30%"}
-- simple height threshold to search for non-forested areas
-:::
-::::
-
-
-## 
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/post-disturbance_2020_sample.jpeg)
-:::
-
-::: {.column width="30%"}
-- disturbance validation
-
-Processed?
-
-- No
-    - (log detection)
-    - existing regrowth
-    - potential seeding trees
-    - skid trails (reuse?)
-- Yes
-    - skid trails (FSC-conform?)
-    - wood piles
-
-:::
-::::
-
-
-## Deadwood detection {transition="fade"}
-
-![](images/spruce_stand_above.png)
-
-
-## Deadwood detection {transition="fade"}
-
-![](images/spruce_stand_deadwood.png)
-
-
-## Small scale disturbances {transition="fade"}
-
-![](images/beech_stand_above.png)
-
-
-## Small scale disturbances {transition="fade"}
-
-![](images/beech_stand_deadwood.png)
-
-
-##
-
-site index
-    solar energy (remaining vegetation)
-remaining trees (regrowth management)
-deadwood
-forest thinning
-
-## Forest Management
-
-Potential Regeneration (Second layer trees)
-
-## Wood Volume
-
-## Disturbance Severity
-
-- remaining trees
-- differentiate thinning (also with photos)
+:::{.notes}
+ALS in between
+- detailed data on local level
+- wide voverage
 - 
-
+:::
 
 
 # Pre-Disturbance Data
 
-## Aerial Imagery {transition="fade"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_ortho.jpeg)
-:::
-
-::: {.column width="30%"}
-- readily available
-- easy visual interpretation 
-:::
-::::
-
-
-##  Canopy height {transition="fade"}
+##  Canopy Height Model {transition="fade" auto-animate=true}
 
 :::: {.columns}
 ::: {.column width="70%"}
@@ -317,64 +198,25 @@ Potential Regeneration (Second layer trees)
 :::
 
 ::: {.column width="30%"}
-- basic stand characteristics  
+- standard product
+
+**Retrospective analysis**
+
+- delineate basic stand characteristics 
 :::
 ::::
 
 
-## Individual trees {transition="fade"}
+::: {.notes}
+valuable information 
 
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_ttops.jpeg)
+e.g.
+
+- stand structure of affected vs unaffected stands
 :::
 
-::: {.column width="30%"}
-- tree characteristics
-:::
-::::
 
-
-## Stand density {transition="fade"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_ttops_stand-density.jpeg)
-:::
-
-::: {.column width="30%"}
-
-:::
-::::
-
-
-## Intensity {transition="fade"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_imean-upper.jpeg)
-:::
-
-::: {.column width="30%"}
-Can be used to delineate species groups under certain conditions
-:::
-::::
-
-
-## Species group {transition="fade"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_ttops_species.jpeg)
-:::
-
-::: {.column width="30%"}
-stand structure
-:::
-::::
-
-
-## Canopy gaps {transition="fade"}
+## Canopy Gaps {transition="fade" auto-animate=true}
 
 :::: {.columns}
 ::: {.column width="70%"}
@@ -382,12 +224,69 @@ stand structure
 :::
 
 ::: {.column width="30%"}
-unstocked forest areas prior to disturbance
+
+**Retrospective analysis**
+
+- unstocked forest areas prior to disturbance
+:::
+::::
+
+::: {.notes}
+easy delineation
+
+differentiate disturbance from already unstocked areas
+
+these might be false positives
+:::
+
+
+## Individual Trees {transition="fade" auto-animate=true}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_ttops.jpeg)
+:::
+
+::: {.column width="30%"}
+
+**Retrospective analysis**
+
+- disturbance characteristics on the tree level 
+    - size
+    - number 
+    - composition
+    - ...
 :::
 ::::
 
 
-## Understory vegetation {transition="fade"}
+::: {.notes}
+intersect disturbances with individual trees
+
+
+:::
+
+
+## Species Group {transition="fade" auto-animate=true}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_ttops_species.jpeg)
+:::
+
+::: {.column width="30%"}
+
+**Retrospective analysis**
+
+- species group based on
+    - Spatial point metrics 
+    - Intensity (under certain conditions)
+:::
+::::
+
+
+
+## Understory Vegetation {transition="fade" auto-animate=true}
 
 :::: {.columns}
 ::: {.column width="70%"}
@@ -395,27 +294,26 @@ unstocked forest areas prior to disturbance
 :::
 
 ::: {.column width="30%"}
-- stand structure
+
+**Retrospective analysis**
+
+- vertical stand structure
+
+<br>
+
+**Current Management**
+
 - potential regrowth
 - prioritize afforestation
 :::
 ::::
 
-
-## Understory vegetation {transition="fade"} 
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_imean-lower.jpeg)
+::: {.notes}
+lidar data shines at providing further information below the canopy
 :::
 
-::: {.column width="30%"}
-stand structure
-:::
-::::
 
-
-## Terrain {transition="fade"}
+## Terrain {transition="fade" auto-animate=true}
 
 :::: {.columns}
 ::: {.column width="70%"}
@@ -423,10 +321,18 @@ stand structure
 :::
 
 ::: {.column width="30%"}
-- forest site conditions
-- infrastructure
+
+**Retrospective analysis**
+
+- site conditions
+
+<br>
+
+**Current Management**
+
+- site conditions
+- infrastructure network
 - trafficability
-- ...
 :::
 ::::
 
@@ -434,33 +340,6 @@ stand structure
 plan harvesting operations
     - existing skid tracks
 :::
-
-## Site index (solar energy) {transition="fade"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_dtm_time-in-daylight2.jpeg)
-:::
-
-::: {.column width="30%"}
-- possible cause for disturbance?
-- information for afforestation planning
-:::
-::::
-
-
-## Site index (hydrology) {transition="fade"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_flow-accumulation.jpeg)
-:::
-
-::: {.column width="30%"}
-- possible cause for disturbance?
-- information for afforestation planning
-:::
-::::
 
 
 ## Example {transition="fade"}
@@ -471,9 +350,13 @@ plan harvesting operations
 :::
 
 ::: {.column width="30%"}
+
+**Sample site**
+
 - 4.4 ha
 - disturbance between 2018 and 2021
-- windthrow / bark beetle
+- by windthrow / bark beetle
+- detected with Sentinel-2
 
 
 ![](images/rheinhausen_sample_ortho_overview.jpeg)
@@ -489,6 +372,9 @@ plan harvesting operations
 :::
 
 ::: {.column width="30%"}
+
+**Retrospective analysis**
+
 - 853 trees  
     - 104 deciduous
     - 749 evergreen
@@ -508,9 +394,12 @@ plan harvesting operations
 :::
 
 ::: {.column width="30%"}
+
+**Current Management**
+
 - 254 m forest road (58 m/ha)
-- 768 m skid roads (176 m/ha)
-- obstacles
+- 768 m skid tracks (176 m/ha)
+- terrain obstacles
 :::
 ::::
 
@@ -522,6 +411,9 @@ plan harvesting operations
 :::
 
 ::: {.column width="30%"}
+
+**Retrospective analysis** / **Current Management**
+
 - wetness
 - solar exposure
 :::
@@ -530,17 +422,204 @@ plan harvesting operations
 
 
 
+# Post-Disturbance Data
+
+
+## Post-Disturbance {transition="fade" auto-animate=true}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/disturbance_rayshader_2020.png)
+:::
+
+::: {.column width="30%"}
+
+**Retrospective analysis**
+
+- disturbance evaluation
+
+<br>
+
+**Current Management**
+
+- existing regrowth
+- potential seeding trees
+
+<br>
+
+::: {.fragment}
+[Processed]{.highlight-color-pink}
+
+- operation evaluation
+    - skid trails (FSC-conform?)
+    - wood piles
+:::
+
+:::
+::::
+
+
+::: {.notes}
+:::
+
+
+## Post-Disturbance {transition="fade" auto-animate=true}
+
+:::: {.columns}
+::: {.column width="70%"}
+
+::: {.r-stack}
+::: {.fragment .fade-out  fragment-index=2}
+![](images/spruce_stand_above.png)
+:::
+
+::: {.fragment .fade-in  fragment-index=2}
+![](images/spruce_stand_deadwood.png)
+:::
+
+:::
+:::
+
+::: {.column width="30%"}
+
+**Retrospective analysis**
+
+- disturbance evaluation
+- operation evaluation
+    - skid trails (FSC-conform?)
+    - wood piles
+
+<br>
+
+**Current Management**
+
+- existing regrowth
+- potential seeding trees
+
+<br>
+
+[Unprocessed]{.highlight-color-pink}
+
+:::{.fragment fragment-index=2}
+- log detection
+- operation planning
+    - skid trails
+:::
+
+:::
+::::
+
+
+::: {.notes}
+- based on neighbourhood metrics of points 
+- could be done with aerial imagery as well for stand replacing disturbances
+:::
+
+
+## Post-Disturbance {transition="fade" auto-animate=true}
+
+:::: {.columns}
+::: {.column width="70%"}
+
+::: {.r-stack}
+::: {.fragment .fade-out  fragment-index=1}
+![](images/beech_stand_above.png)
+:::
+
+::: {.fragment .fade-in  fragment-index=1}
+![](images/beech_stand_deadwood.png)
+:::
+
+:::
+:::
+
+::: {.column width="30%"}
+
+**Retrospective analysis**
+
+- disturbance evaluation
+- operation evaluation
+    - skid trails (FSC-conform?)
+    - wood piles
+- log detection
+
+<br>
+
+**Current Management**
+
+- existing regrowth
+- potential seeding trees
+- operation planning
+    - skid trails
+    - trafficability
+:::
+::::
+
+
+::: {.notes}
+- but can also be done below canopy for non-stand-replacing disturbances
+:::
+
+
+## Multitemporal Data {transition="fade" auto-animate=true}
+
+:::: {.columns}
+::: {.column width="70%"}
+
+::: {.r-stack}
+::: {.fragment .fade-out  fragment-index=1}
+![](images/disturbance_rayshader_2016.png)
+:::
+
+::: {.fragment .fade-in  fragment-index=1}
+![](images/disturbance_rayshader_2020.png)
+:::
+
+:::
+:::
+
+::: {.column width="30%"}
+- rarely available (in desired period)
+- pre- / post-disturbance information
+
+plus
+
+- direct change detection
+:::
+
+::::
+
+
+::: {.notes}
+:::
+
 
 # Conclusion
 
-Retrospective disturbance analysis
+<br>
+
+:::: {.columns}
+::: {.column width="70%"}
+**ALS data provides valuable information for**
+
+1. **Retrospective disturbance analysis**
+2. **Ongoing disturbance management**
 
 
+**(combination with satellite-based systems for timely disturbance detection seems benefitial)**
 
-Slides available under  
+:::
+
+::: {.column width="30%"}
+Slides available under: 
+
 [{{< var website >}}]({{< var website >}})
 
+<br>
+
 {{< qrcode https://wiesehahn.github.io/presentation-silvilaser23 width=500 height=500 colorDark='#0011bb' >}}
+:::
+::::
 
 
 
@@ -548,4 +627,148 @@ Slides available under
 
 ::: {#refs}
 :::
+
+
+
+
+
+# Unsorted {visibility="uncounted"}
+
+## Aerial Imagery {transition="fade" visibility="uncounted"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_ortho.jpeg)
+:::
+
+::: {.column width="30%"}
+- readily available
+- easy visual interpretation 
+:::
+::::
+
+
+## Stand Density {transition="fade" visibility="uncounted"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_ttops_stand-density.jpeg)
+:::
+
+::: {.column width="30%"}
+
+:::
+::::
+
+
+
+## Post-Disturbance {transition="fade" visibility="uncounted"}
+
+:::: {.columns}
+::: {.column width="70%"}
+
+::: {.r-stack}
+![](images/post-disturbance_2020_chm.jpeg)
+
+![](images/post-disturbance_2020_chm_disturbance.jpeg){.fragment}
+:::
+
+
+:::
+
+::: {.column width="30%"}
+- simple height threshold to search for non-forested areas
+:::
+::::
+
+
+
+## Intensity {transition="fade" visibility="uncounted"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_imean-upper.jpeg)
+:::
+
+::: {.column width="30%"}
+:::
+::::
+
+
+## Site index (solar energy) {transition="fade" visibility="uncounted"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_dtm_time-in-daylight2.jpeg)
+:::
+
+::: {.column width="30%"}
+- possible cause for disturbance?
+- information for afforestation planning
+:::
+::::
+
+
+## Site index (hydrology) {transition="fade" visibility="uncounted"}
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/rheinhausen_flow-accumulation.jpeg)
+:::
+
+::: {.column width="30%"}
+- possible cause for disturbance?
+- information for afforestation planning
+:::
+::::
+
+
+
+## Mapped Disturbances {background-color="white" background-image=images/harz_3dview_ortho2022_disturbances.jpeg visibility="uncounted"} 
+
+<br>
+
+::: {.light-color}
+barely any
+:::
+
+## Height Models {background-color="white" background-image=images/harz_3dview_cmh2018.jpeg visibility="uncounted"}
+
+<br>
+
+::: {.light-color}
+Terrain / Canopy Height Model
+:::
+
+## Height Models {background-color="white" background-image=images/harz_3dview_cmh2018_disturbances.jpeg visibility="uncounted"} 
+
+<br>
+
+::: {.light-color}
+Terrain / Canopy Height Model
+:::
+
+## Height Models {background-color="white" background-image=images/sample_disturbance.png visibility="uncounted"}
+
+112.2 ha
+
+## ITD {background-color="white" background-image=images/sample_disturbance_ttops.png visibility="uncounted"}
+
+- 29833 trees
+- 266 trees/ha
+- 26.64 m avg. height 
+
+
+## ALS Data Availability {visibility="uncounted"}
+
+Europe:
+
+- ALS data available as Open Data in most countries
+
+Germany:
+
+- available from federal mapping agencies
+- more and more as open data
+- repeated campaigns in some states
+- statewide data from national mapping agency in the future (?) 
 

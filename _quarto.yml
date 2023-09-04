@@ -3,10 +3,7 @@ project:
 
 website:
     favicon: images/triangle_favicon.png
-title: "Enhancing forest disturbance monitoring with ALS data integration"
-#subtitle: ""
-author: "Jens Wiesehahn"
-institute: "Northwest German Forest Research Institute" 
+
 
 format: # format options: https://quarto.org/docs/reference/formats/presentations/revealjs.html
     revealjs:
