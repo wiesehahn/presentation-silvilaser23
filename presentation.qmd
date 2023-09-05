@@ -10,12 +10,12 @@ title-slide-attributes:
 # Background
 
 ::: {.notes}
-forests are facing a number of challenges
-- increased demands on forest
-    - recreation
-    - biodiversity
-    - timber
-- reduced staff (more area per forester) 
+- to provide context
+
+- forests are facing a number of challenges
+    - increased demands on forest (recreation, biodiversity, timber)
+    - reduced staff (more area per forester) 
+    - climate change
 :::
 
 
@@ -36,7 +36,6 @@ forests are facing a number of challenges
 
 ::: {.notes}
 - 2018 and following years showed severe droughts in Central Europe
-- extreme events will increase
 :::
 
 
@@ -56,11 +55,10 @@ forests are facing a number of challenges
 
 
 ::: {.notes}
-Forests suffered severe drought stress in recent years
-German forests hit particularly heavy
+conditions amplified bark beetle outbreaks
 
-- 2017: Forestry world still fine 
-- 2018+: droughts + barkbeetle 
+- Harz 2017: Forestry world still fine 
+- Harz 2022 
 :::
 
 
@@ -81,7 +79,7 @@ German forests hit particularly heavy
 
 ::: {.notes}
 - lead to large-scale forest disturbances in recent years
-- caused a need for information
+- lead to a strong need for more information to manage disturbances
 :::
 
 
@@ -101,18 +99,12 @@ German forests hit particularly heavy
 {{< iconify ep arrow-right-bold size=sm >}} caused a need for information
 :::
 
-<br>
-
-. . .
-
-::: {.light-color}
-- more than 500.000 ha (5 %) forest loss (2018-2020) (@thonfeldFirstAssessmentCanopy2022)
-- 255 mio. m³ affected timber (2018-2022) ([BMEL](https://www.bmel.de/DE/themen/wald/wald-in-deutschland/wald-trockenheit-klimawandel.html))
-:::
-
 
 ::: {.notes}
-accelerated forest disturbance mapping
+shows disturbances we mapped in our project 
+
+- more than 500.000 ha (5 %) forest loss (2018-2020) (Thonfeld 2022)
+- 255 mio. m³ affected timber (2018-2022) ([BMEL](https://www.bmel.de/DE/themen/wald/wald-in-deutschland/wald-trockenheit-klimawandel.html))
 :::
 
 
@@ -181,14 +173,23 @@ accelerated forest disturbance mapping
 
 
 :::{.notes}
-ALS in between
-- detailed data on local level
-- wide voverage
+- systems currently applied
+
+- what can we do with ALS in disturbance monitoring?
+    - detailed data on local level
+    - covering large areas
+    - but not frequently available
 - 
 :::
 
 
 # Pre-Disturbance Data
+
+
+::: {.notes}
+differentiate between als data collectes before and after disturbance 
+:::
+
 
 ##  Canopy Height Model {transition="fade" auto-animate=true}
 
@@ -309,7 +310,8 @@ intersect disturbances with individual trees
 ::::
 
 ::: {.notes}
-lidar data shines at providing further information below the canopy
+- use cases befor might work with aerial images
+- lidar data shines at providing further information below the canopy
 :::
 
 
@@ -337,8 +339,14 @@ lidar data shines at providing further information below the canopy
 ::::
 
 ::: {.notes}
-plan harvesting operations
-    - existing skid tracks
+high resolution topographic data provied valuable informatio
+- site conditions (wetness, solar radiation)
+    - which stands were affected
+    - future management
+- plan harvesting operations
+    - existing forest roads / skid tracks
+    - unaccessible areas
+- 
 :::
 
 
@@ -602,12 +610,17 @@ plus
 ::: {.column width="70%"}
 **ALS data provides valuable information for**
 
-1. **Retrospective disturbance analysis**
-2. **Ongoing disturbance management**
+1. [**Retrospective disturbance analysis**]{.highlight-color-pink}
+2. [**Ongoing disturbance management**]{.highlight-color-pink}
 
 
 **(combination with satellite-based systems for timely disturbance detection seems benefitial)**
 
+<br>
+
+<br>
+
+{{< iconify tabler mail size=lg >}} *[jens.wiesehahn@nw-fva.de](mailto:jens.wiesehahn@nw-fva.de)*
 :::
 
 ::: {.column width="30%"}
@@ -620,155 +633,3 @@ Slides available under:
 {{< qrcode https://wiesehahn.github.io/presentation-silvilaser23 width=500 height=500 colorDark='#0011bb' >}}
 :::
 ::::
-
-
-
-# References {visibility="uncounted"}
-
-::: {#refs}
-:::
-
-
-
-
-
-# Unsorted {visibility="uncounted"}
-
-## Aerial Imagery {transition="fade" visibility="uncounted"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_ortho.jpeg)
-:::
-
-::: {.column width="30%"}
-- readily available
-- easy visual interpretation 
-:::
-::::
-
-
-## Stand Density {transition="fade" visibility="uncounted"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_ttops_stand-density.jpeg)
-:::
-
-::: {.column width="30%"}
-
-:::
-::::
-
-
-
-## Post-Disturbance {transition="fade" visibility="uncounted"}
-
-:::: {.columns}
-::: {.column width="70%"}
-
-::: {.r-stack}
-![](images/post-disturbance_2020_chm.jpeg)
-
-![](images/post-disturbance_2020_chm_disturbance.jpeg){.fragment}
-:::
-
-
-:::
-
-::: {.column width="30%"}
-- simple height threshold to search for non-forested areas
-:::
-::::
-
-
-
-## Intensity {transition="fade" visibility="uncounted"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_imean-upper.jpeg)
-:::
-
-::: {.column width="30%"}
-:::
-::::
-
-
-## Site index (solar energy) {transition="fade" visibility="uncounted"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_dtm_time-in-daylight2.jpeg)
-:::
-
-::: {.column width="30%"}
-- possible cause for disturbance?
-- information for afforestation planning
-:::
-::::
-
-
-## Site index (hydrology) {transition="fade" visibility="uncounted"}
-
-:::: {.columns}
-::: {.column width="70%"}
-![](images/rheinhausen_flow-accumulation.jpeg)
-:::
-
-::: {.column width="30%"}
-- possible cause for disturbance?
-- information for afforestation planning
-:::
-::::
-
-
-
-## Mapped Disturbances {background-color="white" background-image=images/harz_3dview_ortho2022_disturbances.jpeg visibility="uncounted"} 
-
-<br>
-
-::: {.light-color}
-barely any
-:::
-
-## Height Models {background-color="white" background-image=images/harz_3dview_cmh2018.jpeg visibility="uncounted"}
-
-<br>
-
-::: {.light-color}
-Terrain / Canopy Height Model
-:::
-
-## Height Models {background-color="white" background-image=images/harz_3dview_cmh2018_disturbances.jpeg visibility="uncounted"} 
-
-<br>
-
-::: {.light-color}
-Terrain / Canopy Height Model
-:::
-
-## Height Models {background-color="white" background-image=images/sample_disturbance.png visibility="uncounted"}
-
-112.2 ha
-
-## ITD {background-color="white" background-image=images/sample_disturbance_ttops.png visibility="uncounted"}
-
-- 29833 trees
-- 266 trees/ha
-- 26.64 m avg. height 
-
-
-## ALS Data Availability {visibility="uncounted"}
-
-Europe:
-
-- ALS data available as Open Data in most countries
-
-Germany:
-
-- available from federal mapping agencies
-- more and more as open data
-- repeated campaigns in some states
-- statewide data from national mapping agency in the future (?) 
-

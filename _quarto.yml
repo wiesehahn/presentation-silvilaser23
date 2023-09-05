@@ -49,3 +49,5 @@ filters:
 bibliography: references.bib
 
 include-after-body: assets/logo-hyperlink.html
+
+# embed-resources: true
