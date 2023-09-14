@@ -494,7 +494,7 @@ high resolution topographic data provied valuable informatio
 
 - disturbance evaluation
 - operation evaluation
-    - skid trails (FSC-conform?)
+    - skid trails
     - wood piles
 
 <br>
@@ -547,7 +547,7 @@ high resolution topographic data provied valuable informatio
 
 - disturbance evaluation
 - operation evaluation
-    - skid trails (FSC-conform?)
+    - skid trails
     - wood piles
 - log detection
 
@@ -592,7 +592,7 @@ high resolution topographic data provied valuable informatio
 
 plus
 
-- direct change detection
+- **direct change detection**
 :::
 
 ::::
@@ -620,7 +620,12 @@ plus
 
 <br>
 
-{{< iconify tabler mail size=lg >}} *[jens.wiesehahn@nw-fva.de](mailto:jens.wiesehahn@nw-fva.de)*
+<br>
+
+{{< iconify tabler mail size=lg >}} *[wiesehahn.jens@gmail.com](mailto:wiesehahn.jens@gmail.com)*
+
+{{< iconify line-md mastodon size=lg >}} *[JensWiesehahn](https://elk.zone/fosstodon.org/@JensWiesehahn)*
+
 :::
 
 ::: {.column width="30%"}
