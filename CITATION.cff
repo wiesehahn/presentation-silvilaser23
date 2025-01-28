@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: >-
+  Enhancing forest disturbance monitoring with ALS data integration
+message: >-
+  Rendered presentation available at https://wiesehahn.github.io/presentation-silvilaser23
+type: dataset
+authors:
+  - given-names: Jens
+    family-names: Wiesehahn
+    email: wiesehahn.jens@gmail.com
+    affiliation: Nordwestdeutsche Forstliche Versuchsanstalt (NW-FVA)
+    orcid: 'https://orcid.org/0000-0002-4482-3012'
+repository-code: >-
+  https://github.com/wiesehahn/presentation-silvilaser23
+url: >-
+  https://wiesehahn.github.io/presentation-silvilaser23
+abstract: >-
+  Forest disturbances in Germany show an unprecedented frequency and extent in recent years. Observed disturbances are mainly a result of drought conditions and windthrow events, which in turn have also fostered a dramatic increase in bark beetle infestations. As a result, there is a growing need to map, analyse and assess forest disturbances. A multitude of projects is currently developing systems to monitor forest disturbances in Germany. Most of these systems use frequently available optical satellite imagery (e.g. Sentinel-2) and change detection analysis to identify forest disturbances. They aim at providing timely information about where forest was disturbed. To further enhance these systems, the integration of airborne laser scanning (ALS) data could be beneficial to gain further insights, as ALS complements satellite imagery by providing high-resolution and three-dimensional information on affected forest stands.
+  We present basic insights into forest disturbances and corresponding monitoring efforts and provide an overview on the status of ALS data availability in Germany. We investigate the potential of various ALS-based use cases to gather additional information for forest disturbance patches detected by satellite imagery. Post-disturbance ALS data could provide detailed information regarding the disturbed forest sites, such as remaining trees or coarse-woody debris. More relevant for appropriate decision-making would be applications based on ALS data collected prior to the disturbances, as it is often readily available. This data could be used to provide information about the affected growing stock, existing skid trails or geomorphology linked to reforestation efforts.
+  The integration of ALS data in existing forest monitoring systems could support informed decision-making for a sustainable management of disturbed forest stands. Additionally, it could be applied to analyse disturbance patterns retrospectively.
+keywords:
+  - forest disturbance
+  - ALS
+  - data integration 
+  - monitoring
+  - forest management
+license: CC-BY-SA-4.0
+date-released: 2023-09-14
