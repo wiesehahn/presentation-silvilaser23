@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/673325597.svg)](https://doi.org/10.5281/zenodo.14755403)
 
 # Enhancing forest disturbance monitoring with ALS data integration
 

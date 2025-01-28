@@ -10,6 +10,9 @@ authors:
     email: wiesehahn.jens@gmail.com
     affiliation: Nordwestdeutsche Forstliche Versuchsanstalt (NW-FVA)
     orcid: 'https://orcid.org/0000-0002-4482-3012'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.14755403
 repository-code: >-
   https://github.com/wiesehahn/presentation-silvilaser23
 url: >-
